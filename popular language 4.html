@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Languages</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    /* Marquee Style */
+    .marquee {
+      background-color: #333;
+      color: white;
+      font-size: 22px;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .marquee marquee {
+      font-weight: bold;
+    }
+
+    /* Container for all boxes */
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      gap: 25px;
+    }
+
+    /* Box styling */
+    .box {
+      width: 80%;
+      max-width: 700px;
+      background-color: white;
+      border-left: 15px solid #000;
+      border-radius: 6px;
+      padding: 25px 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: translateX(10px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    .box a {
+      text-decoration: none;
+
+      font-weight: bold;
+      color: #000;
+    }
+
+    .box p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    /* Individual left border colors */
+    .c { border-left-color: #007ACC; }         /* Blue for C */
+    .java { border-left-color: #E94E31; }      /* Red for Java */
+    .python { border-left-color: #306998; }    /* Blue for Python */
+    .javascript { border-left-color: #F7DF1E; } /* Yellow for JS */
+  </style>
+</head>
+<body>
+
+  <!-- Marquee Effect -->
+  <div class="marquee">
+    <marquee behavior="scroll" direction="left">Popular Programming Languages</marquee>
+  </div>
+
+  <!-- Box Container -->
+  <div class="box-container">
+
+    <!-- C Language Box -->
+    <div class="box c">
+      <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C programming</a>
+      <p>The C language is a powerful system-level language used for developing operating systems and embedded software.</p>
+      <a href="https://en.wikipedia.org/wiki/C_(programming_language)"> learn more about c </a>
+    </div>
+
+    <!-- Java Language Box -->
+    <div class="box java">
+      <a href="https://www.java.com/" target="_blank">Java</a>
+      <p>Java is a versatile, object-oriented language widely used for building platform-independent applications.</p>
+ <a href="https://www.java.com/"> learn more about c </a>
+
+    </div>
+
+    <!-- Python Language Box -->
+    <div class="box python">
+      <a href="https://www.python.org/" target="_blank">Python</a>
+      <p>Python is a high-level, easy-to-learn language favored for its simplicity and extensive library support.</p>
+ <a href="https://www.python.org/"> learn more about c </a>
+
+    </div>
+
+    <!-- JavaScript Language Box -->
+    <div class="box javascript">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+      <p>JavaScript is the backbone of web development, enabling interactive websites and dynamic user experiences.</p>
+ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"> learn more about c </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+

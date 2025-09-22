@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> SIT Event Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #GOLD;
+      padding: 40px;
+    }
+    .container {
+      background-color: WHITE;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: BLACK;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: RED;
+    }
+ #successMessage {
+      display: REGISTERED SUCCESSFULLY;
+      color: BLACK;
+      margin-top: 20px;
+      font-weight: bold;
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>SIT NAGPUR EVENT REGISTRATION</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="event">Select Event:</label>
+      <select id="event" name="event" required>
+        <option value="">-- Please choose an event --</option>
+        <option value="tech_talk">Tech Talk</option>
+        <option value="workshop"> ENG Workshop</option>
+        <option value="IEEE webinar">IEEE Webinar</option>
+        <option value="HACKOWEEK">HACKOWEEK</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
